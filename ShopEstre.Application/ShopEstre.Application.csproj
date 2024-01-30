@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Games\Command\" />
+    <Folder Include="Games\Querys\" />
+    <Folder Include="TournamentStates\Commands\" />
+    <Folder Include="TournamentStates\Querys\" />
+    <Folder Include="TournamentStatistic\Commands\" />
+    <Folder Include="TournamentStatistic\Querys\" />
+    <Folder Include="PlayerGamesStatistics\Commands\" />
+    <Folder Include="PlayerGamesStatistics\Querys\" />
+    <Folder Include="PlayerGames\Commands\" />
+    <Folder Include="PlayerGames\Querys\" />
+    <Folder Include="PlayerTeamTournaments\Commands\" />
+    <Folder Include="PlayerTeamTournaments\Querys\" />
+    <Folder Include="Teams\Commands\" />
+    <Folder Include="Teams\Querys\" />
+    <Folder Include="Players\Cammands\" />
+    <Folder Include="Players\Querys\" />
+    <Folder Include="TournamentGamesStatistics\Commands\" />
+    <Folder Include="TournamentGamesStatistics\Querys\" />
+    <Folder Include="Tournaments\Commands\" />
+    <Folder Include="Tournaments\Querys\" />
+    <Folder Include="TournamentTeams\Commands\" />
+    <Folder Include="TournamentTeams\Querys\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SportEstre.Domain\ShopEstre.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
